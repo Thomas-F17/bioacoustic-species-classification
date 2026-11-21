@@ -1,0 +1,34 @@
+{
+  "MobileNetV3": {
+    "top1": 73.18037974683544,
+    "top5": 87.10443037974683,
+    "n_recordings": 1264,
+    "builder": "mobilenet",
+    "img_size": 224,
+    "weights": "mobilenetv3_50epoch_weights.pt"
+  },
+  "EfficientNet-B0": {
+    "top1": 74.68354430379746,
+    "top5": 89.1613924050633,
+    "n_recordings": 1264,
+    "builder": "efficientnet_b0",
+    "img_size": 224,
+    "weights": "efficientnet-b0_50epochs_weights.pt"
+  },
+  "ConvNeXt": {
+    "top1": 70.25316455696202,
+    "top5": 85.8386075949367,
+    "n_recordings": 1264,
+    "builder": "convnext_base",
+    "img_size": 224,
+    "weights": "convnext_epoch49_25pct_run.pt"
+  },
+  "Swin-V2-B": {
+    "top1": 79.82594936708861,
+    "top5": 92.16772151898734,
+    "n_recordings": 1264,
+    "builder": "swin_v2_b",
+    "img_size": 256,
+    "weights": "swin_v2_b_epoch050_weights.pt"
+  }
+}

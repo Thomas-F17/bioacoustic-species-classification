@@ -1,0 +1,27 @@
+Inside the ThunderCompute instance:
+
+# Install rclone
+curl https://rclone.org/install.sh | sudo bash
+
+# Configure Google Drive remote
+rclone config
+#   → n, name: gdrive, Google Drive, all defaults
+#   → auto config: n (headless)
+#   → copy the URL to your local browser, authorize, paste token back
+#   → y, q
+
+# Download the tar directly to ~/data/
+mkdir -p ~/data
+rclone copy gdrive:iNatSounds/spectrograms.tar ~/data/ --progress
+
+# If the process gets stuck when the download reaches 100% you should
+# press Ctrl+C and then check that all the data is there by entering the
+# below in the terminal: 
+mv ~/data/spectrograms.tar.*.partial ~/data/spectrograms.tar
+
+# Then you'd rename the partial file to a tar file
+mv ~/data/spectrograms.tar.0ef4cb0e.partial ~/data/spectrograms.tar
+
+# Finally extract and delete tar to save space
+cd ~/data && tar -xf spectrograms.tar && rm spectrograms.tar
+

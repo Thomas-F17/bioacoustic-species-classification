@@ -1,0 +1,8 @@
+.DS_Store
+.local/
+
+# Course administration and planning files
+README-project instructions.md
+ST456-project-marking.pdf
+project-examples.md
+proposal.md

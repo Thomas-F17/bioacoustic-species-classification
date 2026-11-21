@@ -1,0 +1,63 @@
+{
+  "model": "ConvNeXt-Base",
+  "timm_name": "convnext_base.fb_in22k_ft_in1k",
+  "parameters": "88.59M",
+  "pretraining": "ImageNet-22K → ImageNet-1K",
+  "optimizer": "AdamW (lr=1e-4, wd=0.05)",
+  "scheduler": "5-epoch linear warmup → cosine decay to 10%",
+  "epochs": 50,
+  "batch_size": 64,
+  "augmentations": ["mixup (Beta(1,1) in power space)", "freq masking (15 bins)", "time masking (15 bins)"],
+
+  "full_run_100pct": {
+    "training_data": "100% (137,012 recordings)",
+    "best_checkpoint": "epoch 41 (val mAP 74.62%)",
+    "iNatSounds_test": {
+      "mAP": 74.35,
+      "mF1": 74.93,
+      "top1_class_avg": 62.79,
+      "top5_class_avg": 81.94,
+      "top1_simple": 73.82,
+      "top5_simple": 89.82,
+      "ROC_AUC": 99.31
+    },
+    "iNatSounds_val": {
+      "mAP": 74.62,
+      "mF1": 75.42,
+      "top1_class_avg": 63.42,
+      "top5_class_avg": 82.34
+    },
+    "SSW60": "weights lost due to cloud infrastructure failure",
+    "taxonomy_test": {
+      "phylum": 93.80,
+      "class": 80.77,
+      "order": 71.13,
+      "family": 68.16,
+      "genus": 65.72,
+      "species": 62.79
+    }
+  },
+
+  "run_25pct": {
+    "training_data": "25% per epoch (fresh random subset, ~34,253 recordings)",
+    "epochs": 50,
+    "iNatSounds_test": {
+      "mAP": 69.50,
+      "mF1": 71.00,
+      "top1_class_avg": 58.50,
+      "top5_class_avg": 79.00
+    },
+    "SSW60": {
+      "top1": 70.3,
+      "top5": 85.8,
+      "recordings": 1264
+    }
+  },
+
+  "comparison_vs_paper": {
+    "ViT-B-16_paper": {"params": "87.02M", "mAP": 64.40, "top1": 53.60},
+    "ConvNeXt-Base_ours": {"params": "88.59M", "mAP": 74.35, "top1": 62.79},
+    "improvement_mAP_pp": 9.95,
+    "improvement_top1_pp": 9.19
+  }
+}

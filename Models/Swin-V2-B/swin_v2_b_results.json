@@ -1,0 +1,24 @@
+{
+  "config": {
+    "epochs": 50,
+    "warmup_epochs": 5,
+    "batch_size": 64,
+    "lr": 0.0001,
+    "weight_decay": 1e-05,
+    "img_size": 256,
+    "target_length": 512,
+    "test_stride": 256,
+    "subsample": 0.25,
+    "grad_clip": 100.0,
+    "mixup_alpha": 1.0,
+    "model": "timm swinv2_base_window12to16_192to256.ms_in22k_ft_in1k"
+  },
+  "results": {
+    "top1": 60.948762303992496,
+    "top5": 81.42025579762684,
+    "mAP": 70.28538795711198,
+    "mF1": 71.50000968395105,
+    "best_epoch": 50.0,
+    "time_min": 478.02202129364014
+  }
+}

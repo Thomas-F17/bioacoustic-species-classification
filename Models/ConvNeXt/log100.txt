@@ -1,0 +1,319 @@
+04-22 08:35:13 | starting new experiment
+04-22 08:35:18 | Number of classes: 5569
+04-22 08:35:26 | Namespace(spectrogram_dir='/home/ubuntu/data/spectrograms', json_dir='/home/ubuntu/data', geo_model_weights='', log_dir='./logs', seed=42, epochs=50, model='convnext_base', optim='adamw', lr=0.0001, wd=0.05, batch_size=64, eval_freq=2, exp_name='', model_weight='', encoder_weight='', mode='train', mixup=True, pretrained=True, sound_aug=True, loss='ce', multilabel=False, geo_model=False, geo_threshold=0.1, no_masking=False, mean_teacher=False)
+04-22 08:57:19 | Epoch   0 | train set | LR 1.0000E-05 | Loss 6.7073 | Acc 4.90
+04-22 09:19:09 | Epoch   1 | train set | LR 2.8000E-05 | Loss 5.6634 | Acc 18.35
+04-22 09:58:03 | Epoch   1 | val set | LR 2.8000E-05 | Loss 5.2068 | Acc 17.16
+04-22 09:58:03 | 
+sound_avg-level
+|  mAP: 18.06%
+|  F1-max: 23.15%
+|  ROC-AUC: 90.95%
+|  class-avg-top-1: 10.32%
+|  class-avg-top-5: 18.36%
+|  simple-top-1: 24.08%
+|  simple-top-5: 40.15%
+
+04-22 09:58:04 | >>> New best model saved at epoch 1
+04-22 10:19:57 | Epoch   2 | train set | LR 4.6000E-05 | Loss 4.9803 | Acc 27.96
+04-22 10:41:56 | Epoch   3 | train set | LR 6.4000E-05 | Loss 4.5546 | Acc 33.64
+04-22 11:20:41 | Epoch   3 | val set | LR 6.4000E-05 | Loss 3.8517 | Acc 34.44
+04-22 11:20:41 | 
+sound_avg-level
+|  mAP: 45.42%
+|  F1-max: 50.42%
+|  ROC-AUC: 97.91%
+|  class-avg-top-1: 28.99%
+|  class-avg-top-5: 48.73%
+|  simple-top-1: 49.61%
+|  simple-top-5: 71.16%
+
+04-22 11:20:43 | >>> New best model saved at epoch 3
+04-22 11:42:49 | Epoch   4 | train set | LR 8.2000E-05 | Loss 4.2252 | Acc 37.28
+04-22 12:04:35 | Epoch   5 | train set | LR 1.0000E-04 | Loss 3.9834 | Acc 40.54
+04-22 12:42:43 | Epoch   5 | val set | LR 1.0000E-04 | Loss 3.3242 | Acc 42.19
+04-22 12:42:43 | 
+sound_avg-level
+|  mAP: 58.30%
+|  F1-max: 61.82%
+|  class-avg-top-1: 43.78%
+|  class-avg-top-5: 66.08%
+
+04-22 12:42:45 | >>> New best model saved at epoch 5
+04-22 13:04:27 | Epoch   6 | train set | LR 9.9890E-05 | Loss 3.7539 | Acc 43.28
+04-22 13:26:16 | Epoch   7 | train set | LR 9.9562E-05 | Loss 3.5759 | Acc 45.68
+04-22 14:04:37 | Epoch   7 | val set | LR 9.9562E-05 | Loss 3.0739 | Acc 46.57
+04-22 14:04:37 | 
+sound_avg-level
+|  mAP: 64.91%
+|  F1-max: 67.48%
+|  class-avg-top-1: 52.77%
+|  class-avg-top-5: 74.73%
+
+04-22 14:04:40 | >>> New best model saved at epoch 7
+04-22 14:26:21 | Epoch   8 | train set | LR 9.9017E-05 | Loss 3.4355 | Acc 47.54
+04-22 14:48:15 | Epoch   9 | train set | LR 9.8257E-05 | Loss 3.3170 | Acc 49.06
+04-22 15:26:25 | Epoch   9 | val set | LR 9.8257E-05 | Loss 2.9793 | Acc 48.63
+04-22 15:26:25 | 
+sound_avg-level
+|  mAP: 68.07%
+|  F1-max: 70.11%
+|  class-avg-top-1: 55.85%
+|  class-avg-top-5: 77.66%
+
+04-22 15:26:28 | >>> New best model saved at epoch 9
+04-22 15:48:16 | Epoch  10 | train set | LR 9.7286E-05 | Loss 3.1954 | Acc 50.79
+04-22 16:11:09 | Epoch  11 | train set | LR 9.6110E-05 | Loss 3.0900 | Acc 52.20
+04-22 16:48:59 | Epoch  11 | val set | LR 9.6110E-05 | Loss 2.9115 | Acc 49.77
+04-22 16:48:59 | 
+sound_avg-level
+|  mAP: 69.77%
+|  F1-max: 71.52%
+|  class-avg-top-1: 57.86%
+|  class-avg-top-5: 78.61%
+
+04-22 16:49:01 | >>> New best model saved at epoch 11
+04-22 17:10:48 | Epoch  12 | train set | LR 9.4733E-05 | Loss 3.0226 | Acc 53.08
+04-22 17:32:35 | Epoch  13 | train set | LR 9.3162E-05 | Loss 2.9627 | Acc 53.96
+04-22 18:10:18 | Epoch  13 | val set | LR 9.3162E-05 | Loss 2.8305 | Acc 51.01
+04-22 18:10:18 | 
+sound_avg-level
+|  mAP: 71.33%
+|  F1-max: 72.76%
+|  class-avg-top-1: 60.43%
+|  class-avg-top-5: 81.10%
+
+04-22 18:10:20 | >>> New best model saved at epoch 13
+04-22 18:32:02 | Epoch  14 | train set | LR 9.1406E-05 | Loss 2.8949 | Acc 55.00
+04-22 18:53:44 | Epoch  15 | train set | LR 8.9472E-05 | Loss 2.8043 | Acc 56.66
+04-22 19:31:29 | Epoch  15 | val set | LR 8.9472E-05 | Loss 2.8059 | Acc 51.60
+04-22 19:31:29 | 
+sound_avg-level
+|  mAP: 72.27%
+|  F1-max: 73.55%
+|  class-avg-top-1: 60.63%
+|  class-avg-top-5: 81.43%
+
+04-22 19:31:32 | >>> New best model saved at epoch 15
+04-22 19:53:30 | Epoch  16 | train set | LR 8.7370E-05 | Loss 2.7850 | Acc 56.51
+04-22 20:15:33 | Epoch  17 | train set | LR 8.5111E-05 | Loss 2.7280 | Acc 57.56
+04-22 20:53:30 | Epoch  17 | val set | LR 8.5111E-05 | Loss 2.7751 | Acc 52.33
+04-22 20:53:30 | 
+sound_avg-level
+|  mAP: 72.93%
+|  F1-max: 74.09%
+|  class-avg-top-1: 62.08%
+|  class-avg-top-5: 82.47%
+
+04-22 20:53:32 | >>> New best model saved at epoch 17
+04-22 21:15:23 | Epoch  18 | train set | LR 8.2705E-05 | Loss 2.6702 | Acc 58.33
+04-22 21:37:25 | Epoch  19 | train set | LR 8.0164E-05 | Loss 2.6446 | Acc 58.36
+04-22 22:15:02 | Epoch  19 | val set | LR 8.0164E-05 | Loss 2.7655 | Acc 52.46
+04-22 22:15:02 | 
+sound_avg-level
+|  mAP: 72.83%
+|  F1-max: 73.97%
+|  class-avg-top-1: 61.85%
+|  class-avg-top-5: 81.93%
+
+04-22 22:36:38 | Epoch  20 | train set | LR 7.7500E-05 | Loss 2.5937 | Acc 59.37
+04-22 22:58:14 | Epoch  21 | train set | LR 7.4727E-05 | Loss 2.5454 | Acc 60.16
+04-22 23:35:20 | Epoch  21 | val set | LR 7.4727E-05 | Loss 2.7540 | Acc 52.82
+04-22 23:35:20 | 
+sound_avg-level
+|  mAP: 73.30%
+|  F1-max: 74.37%
+|  class-avg-top-1: 62.48%
+|  class-avg-top-5: 82.11%
+
+04-22 23:35:22 | >>> New best model saved at epoch 21
+04-22 23:57:03 | Epoch  22 | train set | LR 7.1857E-05 | Loss 2.5413 | Acc 60.10
+04-23 00:18:39 | Epoch  23 | train set | LR 6.8906E-05 | Loss 2.4958 | Acc 60.75
+04-23 00:55:28 | Epoch  23 | val set | LR 6.8906E-05 | Loss 2.7308 | Acc 53.53
+04-23 00:55:28 | 
+sound_avg-level
+|  mAP: 74.04%
+|  F1-max: 75.11%
+|  class-avg-top-1: 63.17%
+|  class-avg-top-5: 82.88%
+
+04-23 00:55:30 | >>> New best model saved at epoch 23
+04-23 01:17:03 | Epoch  24 | train set | LR 6.5886E-05 | Loss 2.4645 | Acc 60.95
+04-23 01:38:39 | Epoch  25 | train set | LR 6.2814E-05 | Loss 2.4221 | Acc 61.80
+04-23 02:15:54 | Epoch  25 | val set | LR 6.2814E-05 | Loss 2.7437 | Acc 53.27
+04-23 02:15:54 | 
+sound_avg-level
+|  mAP: 73.47%
+|  F1-max: 74.57%
+|  class-avg-top-1: 62.79%
+|  class-avg-top-5: 82.12%
+
+04-23 02:37:28 | Epoch  26 | train set | LR 5.9704E-05 | Loss 2.4147 | Acc 61.74
+04-23 02:59:05 | Epoch  27 | train set | LR 5.6570E-05 | Loss 2.3788 | Acc 62.64
+04-23 03:36:35 | Epoch  27 | val set | LR 5.6570E-05 | Loss 2.7696 | Acc 53.13
+04-23 03:36:35 | 
+sound_avg-level
+|  mAP: 73.62%
+|  F1-max: 74.65%
+|  class-avg-top-1: 62.41%
+|  class-avg-top-5: 81.79%
+
+04-23 03:58:12 | Epoch  28 | train set | LR 5.3430E-05 | Loss 2.3260 | Acc 63.47
+04-23 04:19:49 | Epoch  29 | train set | LR 5.0296E-05 | Loss 2.3207 | Acc 63.22
+04-23 04:56:41 | Epoch  29 | val set | LR 5.0296E-05 | Loss 2.7237 | Acc 53.78
+04-23 04:56:41 | 
+sound_avg-level
+|  mAP: 73.94%
+|  F1-max: 75.07%
+|  class-avg-top-1: 63.29%
+|  class-avg-top-5: 82.67%
+
+04-23 05:18:16 | Epoch  30 | train set | LR 4.7186E-05 | Loss 2.2753 | Acc 64.13
+04-23 05:39:51 | Epoch  31 | train set | LR 4.4114E-05 | Loss 2.2597 | Acc 64.10
+04-23 06:16:56 | Epoch  31 | val set | LR 4.4114E-05 | Loss 2.7417 | Acc 53.56
+04-23 06:16:56 | 
+sound_avg-level
+|  mAP: 74.14%
+|  F1-max: 75.03%
+|  class-avg-top-1: 62.54%
+|  class-avg-top-5: 81.58%
+
+04-23 06:16:58 | >>> New best model saved at epoch 31
+04-23 06:38:32 | Epoch  32 | train set | LR 4.1094E-05 | Loss 2.2287 | Acc 64.77
+04-23 07:00:07 | Epoch  33 | train set | LR 3.8143E-05 | Loss 2.2314 | Acc 64.35
+04-23 07:36:58 | Epoch  33 | val set | LR 3.8143E-05 | Loss 2.7738 | Acc 53.55
+04-23 07:36:58 | 
+sound_avg-level
+|  mAP: 73.76%
+|  F1-max: 74.87%
+|  class-avg-top-1: 62.38%
+|  class-avg-top-5: 81.37%
+
+04-23 07:58:29 | Epoch  34 | train set | LR 3.5273E-05 | Loss 2.1787 | Acc 65.38
+04-23 08:20:02 | Epoch  35 | train set | LR 3.2500E-05 | Loss 2.1754 | Acc 65.32
+04-23 08:56:54 | Epoch  35 | val set | LR 3.2500E-05 | Loss 2.7379 | Acc 53.96
+04-23 08:56:54 | 
+sound_avg-level
+|  mAP: 74.23%
+|  F1-max: 75.18%
+|  class-avg-top-1: 62.95%
+|  class-avg-top-5: 81.91%
+
+04-23 08:56:56 | >>> New best model saved at epoch 35
+04-23 09:18:32 | Epoch  36 | train set | LR 2.9836E-05 | Loss 2.1354 | Acc 66.12
+04-23 09:40:06 | Epoch  37 | train set | LR 2.7295E-05 | Loss 2.0948 | Acc 66.99
+04-23 10:17:06 | Epoch  37 | val set | LR 2.7295E-05 | Loss 2.7439 | Acc 54.05
+04-23 10:17:06 | 
+sound_avg-level
+|  mAP: 74.54%
+|  F1-max: 75.57%
+|  class-avg-top-1: 63.16%
+|  class-avg-top-5: 82.10%
+
+04-23 10:17:08 | >>> New best model saved at epoch 37
+04-23 10:38:45 | Epoch  38 | train set | LR 2.4889E-05 | Loss 2.1084 | Acc 66.45
+04-23 11:00:27 | Epoch  39 | train set | LR 2.2630E-05 | Loss 2.0839 | Acc 66.92
+04-23 11:37:34 | Epoch  39 | val set | LR 2.2630E-05 | Loss 2.7257 | Acc 54.09
+04-23 11:37:34 | 
+sound_avg-level
+|  mAP: 74.31%
+|  F1-max: 75.20%
+|  class-avg-top-1: 63.49%
+|  class-avg-top-5: 82.10%
+
+04-23 11:59:11 | Epoch  40 | train set | LR 2.0528E-05 | Loss 2.0518 | Acc 67.41
+04-23 12:20:50 | Epoch  41 | train set | LR 1.8594E-05 | Loss 2.0477 | Acc 67.45
+04-23 12:58:02 | Epoch  41 | val set | LR 1.8594E-05 | Loss 2.7338 | Acc 54.17
+04-23 12:58:02 | 
+sound_avg-level
+|  mAP: 74.62%
+|  F1-max: 75.42%
+|  ROC-AUC: 99.38%
+|  class-avg-top-1: 63.42%
+|  class-avg-top-5: 82.34%
+|  simple-top-1: 75.19%
+|  simple-top-5: 90.61%
+
+04-23 12:58:04 | >>> New best model saved at epoch 41
+04-23 13:19:38 | Epoch  42 | train set | LR 1.6838E-05 | Loss 2.0359 | Acc 67.35
+04-23 13:41:16 | Epoch  43 | train set | LR 1.5267E-05 | Loss 2.0131 | Acc 68.08
+04-23 14:18:32 | Epoch  43 | val set | LR 1.5267E-05 | Loss 2.7285 | Acc 54.24
+04-23 14:18:32 | 
+sound_avg-level
+|  mAP: 74.39%
+|  F1-max: 75.32%
+|  class-avg-top-1: 63.43%
+|  class-avg-top-5: 82.26%
+
+04-23 14:40:06 | Epoch  44 | train set | LR 1.3890E-05 | Loss 2.0276 | Acc 67.27
+04-23 15:01:40 | Epoch  45 | train set | LR 1.2714E-05 | Loss 2.0042 | Acc 67.92
+04-23 15:38:31 | Epoch  45 | val set | LR 1.2714E-05 | Loss 2.7483 | Acc 54.09
+04-23 15:38:31 | 
+sound_avg-level
+|  mAP: 74.42%
+|  F1-max: 75.39%
+|  class-avg-top-1: 63.26%
+|  class-avg-top-5: 82.08%
+
+04-23 16:00:05 | Epoch  46 | train set | LR 1.1743E-05 | Loss 1.9937 | Acc 68.14
+04-23 16:21:44 | Epoch  47 | train set | LR 1.0983E-05 | Loss 1.9818 | Acc 68.13
+04-23 16:58:46 | Epoch  47 | val set | LR 1.0983E-05 | Loss 2.7611 | Acc 53.93
+04-23 16:58:46 | 
+sound_avg-level
+|  mAP: 74.29%
+|  F1-max: 75.29%
+|  class-avg-top-1: 62.57%
+|  class-avg-top-5: 81.25%
+
+04-23 17:20:21 | Epoch  48 | train set | LR 1.0438E-05 | Loss 1.9736 | Acc 68.67
+04-23 17:41:58 | Epoch  49 | train set | LR 1.0110E-05 | Loss 1.9643 | Acc 68.31
+04-23 18:18:57 | Epoch  49 | val set | LR 1.0110E-05 | Loss 2.7638 | Acc 53.98
+04-23 18:18:57 | 
+sound_avg-level
+|  mAP: 74.27%
+|  F1-max: 75.25%
+|  class-avg-top-1: 62.71%
+|  class-avg-top-5: 81.29%
+
+04-23 18:18:57 | Best Val: Epoch 41, Best metrics
+04-23 18:18:57 | 
+sound_avg-level
+|  mAP: 74.62%
+|  F1-max: 75.42%
+|  ROC-AUC: 99.38%
+|  class-avg-top-1: 63.42%
+|  class-avg-top-5: 82.34%
+|  simple-top-1: 75.19%
+|  simple-top-5: 90.61%
+
+04-23 18:58:49 | Epoch  41 | test set | LR 1.0110E-05 | Loss 2.8882 | Acc 52.27
+04-23 18:58:49 | 
+sound_avg-level
+|  mAP: 74.35%
+|  F1-max: 74.93%
+|  ROC-AUC: 99.31%
+|  class-avg-top-1: 62.79%
+|  class-avg-top-5: 81.94%
+|  simple-top-1: 73.82%
+|  simple-top-5: 89.82%
+|  Taxonomy Levels
+|  |  taxa_kingdom(1)_acc: 100.00%
+|  |  taxa_phylum(2)_acc: 93.80%
+|  |  taxa_class(5)_acc: 80.77%
+|  |  taxa_order(35)_acc: 71.13%
+|  |  taxa_family(175)_acc: 68.16%
+|  |  taxa_genus(633)_acc: 65.72%
+|  |  taxa_specific_epithet(1212)_acc: 62.79%
+sound_max-level
+|  mAP: 70.56%
+|  F1-max: 72.34%
+|  ROC-AUC: 99.16%
+|  class-avg-top-1: 61.95%
+|  class-avg-top-5: 82.27%
+|  simple-top-1: 73.13%
+|  simple-top-5: 89.98%
+window-level
+|  class-avg-top-1: 44.20%
+|  class-avg-top-5: 59.69%
+|  simple-top-1: 51.08%
+|  simple-top-5: 65.57%
